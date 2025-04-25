@@ -4,7 +4,9 @@
 		"use_tls": false,
 		"cert_path": "",
 		"key_path": "",
-		"trusted_origins": []
+		  "trusted_origins": [
+    "http://your-app-name.onrender.com:10000"
+  ]
 	},
 	"phish_server": {
 		"listen_url": "0.0.0.0:80",
