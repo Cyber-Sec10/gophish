@@ -1,13 +1,13 @@
 {
 	"admin_server": {
-		"listen_url": "0.0.0.0:10000",
+		"listen_url": "https://gophish-5f5u.onrender.com:3333",
 		"use_tls": false,
 		"cert_path": "gophish_admin.crt",
 		"key_path": "gophish_admin.key",
 		"trusted_origins": ["https://gophish-5f5u.onrender.com"]
 	},
 	"phish_server": {
-		"listen_url": "0.0.0.0:12345",
+		"listen_url": "https://gophish-5f5u.onrender.com::12345",
 		"use_tls": false,
 		"cert_path": "example.crt",
 		"key_path": "example.key"
