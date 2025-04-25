@@ -278,7 +278,7 @@ func (s *ModelsSuite) TestMailLogGenerateTransparencyHeaders(ch *check.C) {
 
 func (s *ModelsSuite) TestMailLogGenerateOverrideTransparencyHeaders(ch *check.C) {
 	expectedHeaders := map[string]string{
-		"X-Mailer":          "",
+		"X-Mailer": "",
 		"X-Contact": "",
 	}
 	smtp := SMTP{
