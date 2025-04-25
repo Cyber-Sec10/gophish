@@ -5,7 +5,7 @@
 		"cert_path": "",
 		"key_path": "",
 		  "trusted_origins": [
-    "http://your-app-name.onrender.com:10000"
+    "https://gophish-5f5u.onrender.com:10000"
   ]
 	},
 	"phish_server": {
