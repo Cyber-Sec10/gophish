@@ -266,7 +266,7 @@ func (s *ModelsSuite) TestMailLogGenerate(ch *check.C) {
 func (s *ModelsSuite) TestMailLogGenerateTransparencyHeaders(ch *check.C) {
 	s.config.ContactAddress = "test@test.com"
 	expectedHeaders := map[string]string{
-		"X-Mailer":          config.ServerName,
+		"X-Mailer": config.ServerName,
 		"X-Contact": s.config.ContactAddress,
 	}
 	campaign := s.createCampaign(ch)
