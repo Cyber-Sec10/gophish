@@ -114,9 +114,6 @@ func main() {
 		adminOptions = append(adminOptions, controllers.WithWorker(nil))
 	}
 	adminConfig := conf.AdminConf
-	if port := os.Getenv("PORT"); port != "" {
-		adminConfig.ListenURL = "0.0.0.0:" + port
-	}
 	adminServer := controllers.NewAdminServer(adminConfig, adminOptions...)
 	middleware.Store.Options.Secure = adminConfig.UseTLS
 
