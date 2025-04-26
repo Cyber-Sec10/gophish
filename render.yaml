@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: sneakyphish
+    env: go
+    region: frankfurt
+    buildCommand: go build -o gophish
+    startCommand: ./gophish
+    envVars:
+      - key: CONFIG_PATH
+        value: ./config.json
+    plan: free
+    autoDeploy: true
