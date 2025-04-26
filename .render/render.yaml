@@ -5,6 +5,3 @@ services:
     buildCommand: go build -o gophish
     startCommand: ./gophish
     plan: free
-    envVars:
-      - key: PORT
-        value: 3333
